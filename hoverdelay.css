@@ -1,0 +1,14 @@
+body { font-family: helvetica, arial, sans-serif; }
+#hover {
+	font-size: 20px;
+	border-radius: 5px;
+	padding: 20px;
+	text-align: center;
+	margin: 0 auto;
+	width: 500px;
+	background: #dedede;
+}
+#debug {
+	margin: 20px 0;
+	font-size: 14px;
+}

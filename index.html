@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="hoverdelay.css" />
+	</head>
+	<body>
+		
+		<div id="hover">
+			Hover me
+		</div>
+		
+		<div id="debug"></div>
+	
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="hoverdelay.js"></script>
+		<script>
+			jQuery(document).ready(function (event) {
+				var $debug = $('#debug'),
+					hoverDelay = new HoverDelay($('#hover'), {
+						onMouseEnter: function () {
+							$debug.html('Hovered over');
+						},
+						onMouseLeave: function () {
+							$debug.html('Hovered out');
+						}
+					});
+			});
+		</script>
+	</body>
+</html>
